@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: localhost
+    password: guest
+    username: guest
+    listener:
+      type: simple
+      simple:
+        default-requeue-rejected: false
+        acknowledge-mode: manual
+
+  redis:
+    host: localhost
+    password: password
+    port: 6379
+    database: 0
+    timeout: 1000s
